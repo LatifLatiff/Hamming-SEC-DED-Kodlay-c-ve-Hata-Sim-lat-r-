@@ -21,7 +21,7 @@ Bu simülatör, **Single-Error-Correcting, Double-Error-Detecting (SEC-DED)** pr
 * **İstatistikler**: Toplam işlem, tespit edilen ve düzeltilen hata sayıları gibi simülasyon istatistiklerini takip etme.
 * **Duyarlı Tasarım**: Mobil ve masaüstü cihazlarda sorunsuz çalışan modern bir arayüz.
 
----
+
 
 
 
