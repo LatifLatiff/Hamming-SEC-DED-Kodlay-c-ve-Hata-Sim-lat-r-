@@ -29,7 +29,7 @@ Bu simülatör, **Single-Error-Correcting, Double-Error-Detecting (SEC-DED)** pr
 
 Projenin nasıl çalıştığını ve özelliklerini daha yakından görmek için aşağıdaki videoyu izleyebilirsiniz.
 
-[![Hamming Kod Simülatörü Video Tanıtımı](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
+[![Hamming Kod Simülatörü Video Tanıtımı](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://youtu.be/Y5CsAWogaE4)
 
 
 
