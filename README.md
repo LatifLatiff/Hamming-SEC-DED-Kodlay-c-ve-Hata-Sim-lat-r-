@@ -1,103 +1,88 @@
-# 🧠 Hamming SEC-DED Code Simulator
+# 🔧 Hamming SEC-DED Kod Simülatörü
 
-Hamming SEC-DED (Single Error Correction, Double Error Detection) algoritmasını kullanan bu interaktif web uygulaması, dijital veri iletiminde oluşabilecek hataları tespit edip düzeltmeyi amaçlar. Eğitim ve görselleştirme odaklı olarak geliştirilmiştir.
+Bu proje, **Hamming (SEC-DED)** kodlama tekniğini interaktif olarak görselleştiren bir web tabanlı simülatördür. Kullanıcıların veri bitlerini girerek bu bitlerin Hamming kodu ile nasıl kodlandığını, olası hataların nasıl eklendiğini, bu hataların nasıl tespit edildiğini ve tek bitlik hataların nasıl düzeltildiğini adım adım görmelerini sağlar.
+
+Bu simülatör, **Single-Error-Correcting, Double-Error-Detecting (SEC-DED)** prensibine dayanır. Bu, bir bitlik hataları düzeltebilen ve iki bitlik hataları tespit edebilen genişletilmiş bir Hamming kodudur.
 
 ---
 
 ## 🚀 Özellikler
 
-- ✅ Hamming SEC-DED algoritması ile kodlama
-- 💡 Parity bit hesaplama & görsel gösterim
-- 🧪 Tek veya çift bitlik hata ekleme
-- 🔍 Syndrome hesaplama ve hata tespiti
-- 🔧 Otomatik hata düzeltme
-- 📊 İstatistik paneli (oluşan & düzeltilen hata sayısı)
-- 🎲 Rastgele veri üretme
-- 🖱️ Bit tıklaması ile hata simülasyonu
+* **Veri Kodlama**: 8, 16 veya 32 bitlik verileri Binary veya Decimal formatta girerek Hamming koduna dönüştürme.
+* **Rastgele Veri**: Tek tıkla rastgele veri üreterek hızlıca kodlama yapma.
+* **Görsel Arayüz**: Veri bitlerini, parite bitlerini ve genel parite bitini renk kodlarıyla ayırt edilebilir şekilde gösterme.
+* **Hata Simülasyonu**:
+    * Belirtilen pozisyonda **tek bitlik hata** ekleme.
+    * Rastgele pozisyonlarda **çift bitlik hata** ekleme.
+* **Hata Tespiti ve Düzeltme**:
+    * **Syndrome** değerini hesaplayıp gösterme ve yorumlama.
+    * Tek bitlik hataları otomatik olarak tespit etme ve düzeltme.
+    * Çift bitlik hataların düzeltilemez olduğunu bildirme.
+* **İstatistikler**: Toplam işlem, tespit edilen ve düzeltilen hata sayıları gibi simülasyon istatistiklerini takip etme.
+* **Duyarlı Tasarım**: Mobil ve masaüstü cihazlarda sorunsuz çalışan modern bir arayüz.
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🖥️ Ekran Görüntüsü
 
-| Teknoloji   | Açıklama                            |
-|-------------|-------------------------------------|
-| HTML5       | Uygulama arayüzünün iskeleti        |
-| CSS3        | Stil ve renk teması                 |
-| JavaScript  | Algoritmalar ve etkileşim mantığı   |
-| DOM API     | Gerçek zamanlı görsel güncellemeler |
+![Hamming Kod Simülatörü Arayüzü](https://i.imgur.com/your-screenshot-url.png)
+*Not: Yukarıdaki ekran görüntüsü temsilidir. Kendi ekran görüntünüzü eklemeyi unutmayın.*
 
 ---
 
-## 📂 Uygulama Yapısı
+## 🛠️ Nasıl Kullanılır?
 
-Proje tek sayfalık bir web uygulamasıdır (SPA). Üç temel dosyadan oluşur:
+Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-hamming-simulator/
-├── index.html → Sayfa yapısı ve HTML içerik
-├── style.css → Tüm stil tanımlamaları
-├── script.js → Kodlama, hata tespiti ve JS mantığı
-└── README.md → Proje dokümantasyonu
+1.  **Projeyi Klonlayın veya İndirin:**
+    ```bash
+    git clone [https://github.com/kullanici-adiniz/proje-repo-adiniz.git](https://github.com/kullanici-adiniz/proje-repo-adiniz.git)
+    ```
+2.  **Klasöre Gidin:**
+    ```bash
+    cd proje-repo-adiniz
+    ```
+3.  **`index.html` Dosyasını Açın:**
+    `index.html` dosyasına çift tıklayarak veya bir web tarayıcısı üzerinden açarak simülatörü başlatabilirsiniz. Herhangi bir sunucu kurulumu gerektirmez.
 
-yaml
-Kopyala
-Düzenle
+### Simülatör Adımları:
 
-Dosya yapısı basit, okunabilir ve kolay özelleştirilebilir olacak şekilde düzenlenmiştir.
-
----
-
-## 📈 Hamming SEC-DED Algoritması
-
-Hamming kodu, veri iletiminde 1-bit’lik hataları düzeltme, 2-bit’lik hataları tespit etme amacıyla kullanılan bir hata düzeltme algoritmasıdır.
-
-- Parity bitleri, 2’nin kuvveti pozisyonlarına eklenir
-- Syndrome hesaplaması ile hata konumu bulunur
-- SEC-DED (Single Error Correction – Double Error Detection) desteklenir
-- Uygulama, kullanıcıdan alınan bit dizisine bu algoritmayı uygular
+1.  **Veri Boyutunu Seçin**: 8, 16 veya 32 bit seçeneklerinden birini seçin.
+2.  **Veriyi Girin**: İkili (binary) veya onluk (decimal) tabanda verinizi girin ve "Kodla" butonuna tıklayın. Alternatif olarak "Rastgele Üret" butonunu kullanabilirsiniz.
+3.  **Hata Ekleyin**: Kodlanmış veri üzerinde hata oluşturmak için bir pozisyon girip "Hata Ekle" butonuna tıklayın veya doğrudan "Çift Hata Ekle" butonunu kullanın.
+4.  **Tespit ve Düzeltme**: "Hata Tespit Et ve Düzelt" butonuna tıklayarak sonucun nasıl düzeltildiğini veya hatanın türünü görün. "Syndrome Göster" butonu ile hata analizini detaylı inceleyebilirsiniz.
 
 ---
 
-## 💡 Uygulamanın Akışı
+## 📂 Proje Yapısı
 
-1. Kullanıcı bit dizisi girer veya rastgele oluşturur
-2. Hamming kodlama yapılır, parity bitleri hesaplanır
-3. Kullanıcı tek / çift bitlik hata simülasyonu yapabilir
-4. Uygulama hatayı tespit eder ve düzeltir
-5. Görsel olarak her adım kullanıcıya sunulur
+* `index.html`: Simülatörün ana yapısını ve HTML iskeletini içerir.
+* `style.css`: Uygulamanın görsel stilini, renklerini, animasyonlarını ve duyarlı tasarımını yönetir.
+* `script.js`: Projenin tüm mantığını içerir:
+    * Hamming kodlama (`hammingEncode`)
+    * Syndrome hesaplama (`calculateSyndrome`)
+    * Hata ekleme ve düzeltme fonksiyonları
+    * DOM manipülasyonu ve olay dinleyicileri
 
 ---
 
-## 🧪 Örnek Kullanım
+## 💻 Kullanılan Teknolojiler
 
-1. Projeyi indir veya klonla:
+* **HTML5**: Web sayfasının yapısal temelini oluşturur.
+* **CSS3**: Modern ve duyarlı bir tasarım için kullanılır (Flexbox, Grid, Animasyonlar).
+* **JavaScript (ES6+)**: Simülatörün tüm interaktif fonksiyonelliğini sağlar.
 
-```bash
-git clone https://github.com/kullaniciadi/hamming-simulator.git
-Klasöre girip HTML dosyasını aç:
+---
 
-bash
-Kopyala
-Düzenle
-cd hamming-simulator
-start index.html     # Windows
-open index.html      # macOS
-Uygulama tarayıcınızda açılır ve hemen kullanılabilir.
+## 🤝 Katkıda Bulunma
 
-📌 Geliştirme Önerileri
-🌗 Tema desteği (karanlık / açık mod)
+Katkılarınız projeyi daha da geliştirmemize yardımcı olur! Fikirlerinizi, hata bildirimlerinizi veya yeni özellik isteklerinizi "Issues" bölümünden iletebilirsiniz. Pull Request'ler her zaman memnuniyetle karşılanır.
 
-📱 Mobil uyumlu responsive tasarım
+1.  Projeyi Fork'layın.
+2.  Yeni bir Feature Branch oluşturun (`git checkout -b feature/yeni-ozellik`).
+3.  Değişikliklerinizi Commit'leyin (`git commit -m 'Yeni bir özellik eklendi'`).
+4.  Branch'inizi Push'layın (`git push origin feature/yeni-ozellik`).
+5.  Bir Pull Request açın.
 
-🔁 CRC ve Reed-Solomon gibi alternatif algoritmalar
+---
 
-🧮 Hexadecimal & ASCII veri gösterimi
-
-📤 Dosya yükleme / dışa aktarım seçenekleri
-
-👨‍💻 Geliştirici Bilgileri
-Alan	Bilgi
-👤 İsim	Ad Soyad
-🏫 Üniversite	Örnek Üniversitesi
-🎓 Bölüm	Bilgisayar Mühendisliği
-📧 E-posta	email@example.com
-🔗 LinkedIn	linkedin.com/in/kullaniciadi
