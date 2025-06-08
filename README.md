@@ -41,11 +41,11 @@ Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izley
 
 1.  **Projeyi Klonlayın veya İndirin:**
     ```bash
-    git clone [https://github.com/kullanici-adiniz/proje-repo-adiniz.git](https://github.com/kullanici-adiniz/proje-repo-adiniz.git)
+    git clone [https://github.com/LatifLatiff/Hamming_code.git
     ```
 2.  **Klasöre Gidin:**
     ```bash
-    cd proje-repo-adiniz
+    cd Hamming_code
     ```
 3.  **`index.html` Dosyasını Açın:**
     `index.html` dosyasına çift tıklayarak veya bir web tarayıcısı üzerinden açarak simülatörü başlatabilirsiniz. Herhangi bir sunucu kurulumu gerektirmez.
