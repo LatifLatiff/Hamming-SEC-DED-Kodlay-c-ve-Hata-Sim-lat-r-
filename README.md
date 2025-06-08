@@ -69,7 +69,7 @@ Hamming kodu, veri iletiminde 1-bit’lik hataları düzeltme, 2-bit’lik hatal
 ```bash
 git clone https://github.com/kullaniciadi/hamming-simulator.git
 Klasöre girip HTML dosyasını aç:
-
+```bash
 2. Klasöre girip HTML dosyasını aç:
 cd hamming-simulator
 start index.html     # Windows
