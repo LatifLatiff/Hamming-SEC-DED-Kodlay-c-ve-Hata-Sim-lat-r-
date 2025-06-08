@@ -37,7 +37,7 @@ Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izley
     ```
 2.  **Klasöre Gidin:**
     ```bash
-    cd proje-repo-adiniz
+    cd Hamming-SEC-DED-Kodlay-c-ve-Hata-Sim-lat-r-
     ```
 3.  **`index.html` Dosyasını Açın:**
     `index.html` dosyasına çift tıklayarak veya bir web tarayıcısı üzerinden açarak simülatörü başlatabilirsiniz. Herhangi bir sunucu kurulumu gerektirmez.
