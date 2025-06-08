@@ -30,12 +30,17 @@ Hamming SEC-DED (Single Error Correction, Double Error Detection) algoritmasın�
 
 ## 📂 Uygulama Yapısı
 
-Proje tek sayfalık bir web uygulamasıdır . Üç temel dosyadan oluşur:
+Proje tek sayfalık bir web uygulamasıdır (SPA). Üç temel dosyadan oluşur:
+
 hamming-simulator/
 ├── index.html → Sayfa yapısı ve HTML içerik
 ├── style.css → Tüm stil tanımlamaları
 ├── script.js → Kodlama, hata tespiti ve JS mantığı
 └── README.md → Proje dokümantasyonu
+
+yaml
+Kopyala
+Düzenle
 
 Dosya yapısı basit, okunabilir ve kolay özelleştirilebilir olacak şekilde düzenlenmiştir.
 
@@ -69,9 +74,30 @@ Hamming kodu, veri iletiminde 1-bit’lik hataları düzeltme, 2-bit’lik hatal
 ```bash
 git clone https://github.com/kullaniciadi/hamming-simulator.git
 Klasöre girip HTML dosyasını aç:
-```bash
-2. Klasöre girip HTML dosyasını aç:
+
+bash
+Kopyala
+Düzenle
 cd hamming-simulator
 start index.html     # Windows
 open index.html      # macOS
+Uygulama tarayıcınızda açılır ve hemen kullanılabilir.
 
+📌 Geliştirme Önerileri
+🌗 Tema desteği (karanlık / açık mod)
+
+📱 Mobil uyumlu responsive tasarım
+
+🔁 CRC ve Reed-Solomon gibi alternatif algoritmalar
+
+🧮 Hexadecimal & ASCII veri gösterimi
+
+📤 Dosya yükleme / dışa aktarım seçenekleri
+
+👨‍💻 Geliştirici Bilgileri
+Alan	Bilgi
+👤 İsim	Ad Soyad
+🏫 Üniversite	Örnek Üniversitesi
+🎓 Bölüm	Bilgisayar Mühendisliği
+📧 E-posta	email@example.com
+🔗 LinkedIn	linkedin.com/in/kullaniciadi
