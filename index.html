@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamming SEC-DED Code Simülatörü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Başlık ve açıklama bölümü -->
+        <div class="header">
+            <h1>🔧 Hamming SEC-DED Code Simülatörü</h1>
+            <p>Single-Error-Correcting, Double-Error-Detecting Code Simülasyonu</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Kullanıcının veri girip kodlama yapabildiği alan -->
+            <div class="section">
+                <h2>Veri Girişi ve Kodlama</h2>
+                <div class="input-group">
+                    <label>Veri Boyutu:</label>
+                    <div class="input-row">
+                        <select id="dataSize">
+                            <option value="8">8 bit</option>
+                            <option value="16">16 bit</option>
+                            <option value="32">32 bit</option>
+                        </select>
+                        <label>Veri (Binary veya Decimal):</label>
+                        <input type="text" id="dataInput" placeholder="Örn: 10110110 veya 182">
+                        <button class="btn" onclick="encodeData()">Kodla</button>
+                        <button class="btn btn-warning" onclick="generateRandom()">Rastgele Üret</button>
+                    </div>
+                </div>
+
+                <div id="encodedResult" class="result-box" style="display:none;">
+                    <h3>Kodlanmış Veri:</h3>
+                    <div id="encodedBits" class="bit-display"></div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #e3f2fd; border-color: #2196f3;"></div>
+                            <span>Veri Bitleri</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #fff3e0; border-color: #ff9800;"></div>
+                            <span>Parity Bitleri</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #f3e5f5; border-color: #9c27b0;"></div>
+                            <span>Overall Parity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hata eklemek için kullanılan simülasyon alanı -->
+            <div class="section">
+                <h2>Hata Simülasyonu</h2>
+                <div class="input-group">
+                    <div class="input-row">
+                        <label>Hata Pozisyonu:</label>
+                        <input type="number" id="errorPosition" min="0" placeholder="Bit pozisyonu">
+                        <button class="btn btn-danger" onclick="introduceError()">Hata Ekle</button>
+                        <button class="btn btn-warning" onclick="introduceDoubleError()">Çift Hata Ekle</button>
+                        <button class="btn" onclick="clearErrors()">Hataları Temizle</button>
+                    </div>
+                </div>
+
+                <div id="errorResult" class="result-box" style="display:none;">
+                    <h3>Hatalı Veri:</h3>
+                    <div id="errorBits" class="bit-display"></div>
+                </div>
+            </div>
+
+            <!-- Hataları tespit edip düzeltme işleminin yapıldığı alan -->
+            <div class="section">
+                <h2>Hata Tespiti ve Düzeltme</h2>
+                <div class="input-row">
+                    <button class="btn" onclick="detectAndCorrect()">Hata Tespit Et ve Düzelt</button>
+                    <button class="btn btn-warning" onclick="showSyndrome()">Syndrome Göster</button>
+                </div>
+
+                <div id="syndromeResult" class="result-box" style="display:none;">
+                    <h3>Syndrome Analizi:</h3>
+                    <div id="syndromeDisplay" class="syndrome-display"></div>
+                    <div id="syndromeInterpretation"></div>
+                </div>
+
+                <div id="correctionResult" class="result-box" style="display:none;">
+                    <h3>Düzeltilmiş Veri:</h3>
+                    <div id="correctedBits" class="bit-display"></div>
+                    <div id="correctionStatus"></div>
+                </div>
+            </div>
+
+            <!-- Simülasyondaki işlem istatistiklerinin gösterildiği alan -->
+            <div class="section">
+                <h2>Simülasyon İstatistikleri</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalOperations">0</div>
+                        <div class="stat-label">Toplam İşlem</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="detectedErrors">0</div>
+                        <div class="stat-label">Tespit Edilen Hatalar</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="correctedErrors">0</div>
+                        <div class="stat-label">Düzeltilen Hatalar</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="doubleErrors">0</div>
+                        <div class="stat-label">Çift Hatalar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
