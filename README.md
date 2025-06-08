@@ -21,7 +21,20 @@ Bu simülatör, **Single-Error-Correcting, Double-Error-Detecting (SEC-DED)** pr
 * **İstatistikler**: Toplam işlem, tespit edilen ve düzeltilen hata sayıları gibi simülasyon istatistiklerini takip etme.
 * **Duyarlı Tasarım**: Mobil ve masaüstü cihazlarda sorunsuz çalışan modern bir arayüz.
 
+---
 
+## 🖥️ Ekran Görüntüsü
+
+![Hamming Kod Simülatörü Arayüzü](https://i.imgur.com/your-screenshot-url.png)
+*Not: Yukarıdaki ekran görüntüsü temsilidir. Kendi ekran görüntünüzü eklemeyi unutmayın.*
+
+---
+
+## 🎥 Video Tanıtımı
+
+Projenin nasıl çalıştığını ve özelliklerini daha yakından görmek için aşağıdaki videoyu izleyebilirsiniz.
+
+[![Hamming Kod Simülatörü Video Tanıtımı](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 
 
 
@@ -33,11 +46,11 @@ Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izley
 
 1.  **Projeyi Klonlayın veya İndirin:**
     ```bash
-    https://github.com/LatifLatiff/Hamming-SEC-DED-Kodlay-c-ve-Hata-Sim-lat-r-.git
+    git clone [https://github.com/kullanici-adiniz/proje-repo-adiniz.git](https://github.com/kullanici-adiniz/proje-repo-adiniz.git)
     ```
 2.  **Klasöre Gidin:**
     ```bash
-    cd Hamming-SEC-DED-Kodlay-c-ve-Hata-Sim-lat-r-
+    cd proje-repo-adiniz
     ```
 3.  **`index.html` Dosyasını Açın:**
     `index.html` dosyasına çift tıklayarak veya bir web tarayıcısı üzerinden açarak simülatörü başlatabilirsiniz. Herhangi bir sunucu kurulumu gerektirmez.
