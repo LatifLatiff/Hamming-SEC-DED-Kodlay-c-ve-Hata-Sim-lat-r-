@@ -21,12 +21,7 @@ Bu simülatör, **Single-Error-Correcting, Double-Error-Detecting (SEC-DED)** pr
 * **İstatistikler**: Toplam işlem, tespit edilen ve düzeltilen hata sayıları gibi simülasyon istatistiklerini takip etme.
 * **Duyarlı Tasarım**: Mobil ve masaüstü cihazlarda sorunsuz çalışan modern bir arayüz.
 
----
 
-## 🖥️ Ekran Görüntüsü
-
-![Hamming Kod Simülatörü Arayüzü](https://i.imgur.com/your-screenshot-url.png)
-*Not: Yukarıdaki ekran görüntüsü temsilidir. Kendi ekran görüntünüzü eklemeyi unutmayın.*
 
 ---
 
