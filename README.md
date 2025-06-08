@@ -33,7 +33,7 @@ Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izley
 
 1.  **Projeyi Klonlayın veya İndirin:**
     ```bash
-    git clone [https://github.com/kullanici-adiniz/proje-repo-adiniz.git](https://github.com/kullanici-adiniz/proje-repo-adiniz.git)
+    https://github.com/LatifLatiff/Hamming-SEC-DED-Kodlay-c-ve-Hata-Sim-lat-r-.git
     ```
 2.  **Klasöre Gidin:**
     ```bash
